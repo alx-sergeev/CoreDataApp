@@ -12,9 +12,9 @@ class TaskList: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     // MARK: - Properties
-    let cellName = "taskCell"
-    var taskList: [Task] = []
-    weak var storageManager = StorageManager.shared
+    private let cellName = "taskCell"
+    private var taskList: [Task] = []
+    private weak var storageManager = StorageManager.shared
     
     override func viewDidLoad() {
         super.viewDidLoad()

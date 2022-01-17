@@ -12,8 +12,8 @@ class StorageManager {
     private init() {}
     
     static var shared = StorageManager()
-    var context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-    let entityName = "Task"
+    private var context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    private let entityName = "Task"
     
     // Получить список задач
     func fetchDataTasks(to tasks: inout [Task]) {
